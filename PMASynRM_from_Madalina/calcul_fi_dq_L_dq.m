@@ -114,8 +114,6 @@ axis([0 180 -0.04 0.23]);
 %dlmwrite('D_d.txt',i);
 %dlmwrite('D_d.txt',D_d, 'delimiter',' ','-append');
 
-%my_table= array2table(D_d,'VariableNames',{'Iq0','Iq10','Iq20','Iq30','Iq40','Iq50','Iq60','Iq70','Iq80','Iq90','Iq100','Iq110','Iq120'%
-%'Iq130','Iq140','Iq150','Iq160','Iq170','Iq180'})
-%table(['M';'F';'M'],[45 45;41 32;40 34],{'NY';'CA';'MA'},[true;false;false])
-%A = [1 12 30.48; 2 24 60.96; 3 36 91.44]
-%T = array2table(A,'VariableNames',{'Feet','Inches','Centimeter'})
+%dlmwrite('Q_d.txt',i);
+%dlmwrite('Q_d.txt',Q_d, 'delimiter',' ','-append');
+
