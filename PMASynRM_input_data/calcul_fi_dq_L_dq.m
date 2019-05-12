@@ -40,7 +40,7 @@ for j=1:3:57 %end=cate coloane are matricea
 end
 i=0:10:180;
 j=0:10:180;
-
+%
 figure;
 d=subplot(2,1,1);
 plot(i, D_d);grid %D_d este fluxul pe axa D
@@ -117,3 +117,9 @@ axis([0 180 -0.04 0.23]);
 %dlmwrite('Q_d.txt',i);
 %dlmwrite('Q_d.txt',Q_d, 'delimiter',' ','-append');
 
+
+if (D_d' == D_q)
+  printf ("DAAAAAAA\n");
+else
+  printf ("x is odd\n");
+endif
